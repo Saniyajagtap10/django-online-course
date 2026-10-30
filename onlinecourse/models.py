@@ -25,6 +25,7 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+        choices = models.ManyToManyField(Choice
 
 # Submission model storing selected choices for an enrollment
 class Submission(models.Model):
